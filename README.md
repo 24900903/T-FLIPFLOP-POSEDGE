@@ -35,28 +35,28 @@ From the above characteristic table, we can directly write the next state equati
 
 **PROGRAM**
 
-  ``Developed by:Harisha
-RegisterNumber:24900903
-module t_flipflop (
+      ```Developed by:Harisha
+   RegisterNumber:24900903
+   module t_flipflop (
     input clk,    // Clock signal
     input reset,  // Active-high reset
     input t,      // Toggle input
-    output reg q  // Output
-);
+    output reg q  // Output);
     always @(posedge clk or posedge reset) begin
         if (reset)
             q <= 1'b0; // Reset output to 0
         else if (t)
             q <= ~q; // Toggle output
     end
-endmodule``
+endmodule```
 
 
 **RTL LOGIC FOR FLIPFLOPS**
 ![d9a](https://github.com/user-attachments/assets/1f350db8-eee3-4c5d-bf23-9dc13d9ac89b)
 
 **TIMING DIGRAMS FOR FLIP FLOPS**
-![Uploading d9b.png…]()
+![d9b](https://github.com/user-attachments/assets/9c537cfb-7f35-4fb4-9295-1fea225cc8dd)
+
 
 **RESULTS**
 Thus the T flipflop using verilog implemented and validated their functionality using
