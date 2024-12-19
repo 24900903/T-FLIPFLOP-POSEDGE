@@ -36,19 +36,19 @@ From the above characteristic table, we can directly write the next state equati
 **PROGRAM**
 
       ```Developed by:Harisha
-   RegisterNumber:24900903
-   module t_flipflop (
-    input clk,    // Clock signal
-    input reset,  // Active-high reset
-    input t,      // Toggle input
-    output reg q  // Output);
-    always @(posedge clk or posedge reset) begin
+         RegisterNumber:24900903
+         module t_flipflop (
+        input clk,    // Clock signal
+        input reset,  // Active-high reset
+        input t,      // Toggle input
+        output reg q  // Output);
+        always @(posedge clk or posedge reset) begin
         if (reset)
             q <= 1'b0; // Reset output to 0
         else if (t)
             q <= ~q; // Toggle output
-    end
-endmodule```
+      end
+      endmodule```
 
 
 **RTL LOGIC FOR FLIPFLOPS**
